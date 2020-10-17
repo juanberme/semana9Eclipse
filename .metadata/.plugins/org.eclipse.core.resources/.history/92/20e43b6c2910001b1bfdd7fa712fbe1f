@@ -1,0 +1,9 @@
+package Model;
+
+public class pastel1 {
+	
+	private String type = "pastel1";
+	
+	
+
+}

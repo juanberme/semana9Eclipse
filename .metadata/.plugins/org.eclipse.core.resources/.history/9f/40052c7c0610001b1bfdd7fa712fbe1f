@@ -1,0 +1,37 @@
+package View;
+
+import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+import processing.core.PApplet;
+
+public class PeerB extends PApplet {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public void settings() {
+		
+		size(500,500);
+		
+	}
+	
+	public void setup() {
+		
+		/*Date date = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
+		String fechaStr = sdf.format(date);*/
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
+		   LocalDateTime now = LocalDateTime.now();  
+		   System.out.println(dtf.format(now)); 
+		//System.out.println();
+	}
+	
+	public void draw() {
+		background(255);
+	}
+
+}
